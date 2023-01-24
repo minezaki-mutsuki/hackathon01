@@ -1,0 +1,107 @@
+🔎 checking possible migrations..
+
+attention => Storybook now collects completely anonymous telemetry regarding usage.
+This information is used to shape Storybook's roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://storybook.js.org/telemetry
+
+
+🔎 found a 'eslintPlugin' migration:
+╭ Automigration detected ────────────────────────────────────────────────╮
+│                                                                        │
+│   We've detected you are not using our eslint-plugin.                  │
+│                                                                        │
+│   In order to have the best experience with Storybook and follow       │
+│   best practices, we advise you to install eslint-plugin-storybook.    │
+│                                                                        │
+│   More info:                                                           │
+│   https://github.com/storybookjs/eslint-plugin-storybook#readme        │
+│                                                                        │
+╰────────────────────────────────────────────────────────────────────────╯
+[?25l? Do you want to run the 'eslintPlugin' migration on your project? » (Y/n)[2K[G√ Do you want to run the 'eslintPlugin' migration on your project? ... yes
+[?25h✅ Adding dependencies: eslint-plugin-storybook
+✅ Adding Storybook plugin to .eslintrc.json
+✅ ran eslintPlugin migration
+
+⚠️  failed to check fix newFrameworks
+
+Error: The given node must be a string literal or an object expression with a "name" property that is a string literal.
+    at ConfigFile._getPresetValue (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\csf-tools\dist\index.js:74:7388)
+    at ConfigFile.getNameFromPath (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\csf-tools\dist\index.js:74:6824)
+    at Object.check (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\cli\dist\generate.js:181:161)
+    at async automigrate (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\cli\dist\generate.js:311:743)
+    at async doInitiate (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\cli\dist\generate.js:372:361)
+    at async withTelemetry (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\core-server\dist\index.js:33:5540)
+    at async initiate (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\cli\dist\generate.js:378:133)
+
+🔎 found a 'mdx1to2' migration:
+╭ Automigration detected ────────────────────────────────────────────────╮
+│                                                                        │
+│   We've found 1 '.stories.mdx' files in your project.                  │
+│                                                                        │
+│   Storybook has upgraded to MDX2 (https://mdxjs.com/blog/v2/), which   │
+│   contains breaking changes from V1.                                   │
+│   We can try to automatically upgrade your MDX files to MDX2 format    │
+│   using some common patterns.                                          │
+│                                                                        │
+│   Some steps might require manual intervention. You can find a full    │
+│   guide for how to manually upgrade your files here:                   │
+│   https://storybook.js.org/docs/7.0/react/writing-docs/mdx#breaking-   │
+│   changes                                                              │
+│                                                                        │
+╰────────────────────────────────────────────────────────────────────────╯
+[?25l? Do you want to run the 'mdx1to2' migration on your project? » (Y/n)[2K[G√ Do you want to run the 'mdx1to2' migration on your project? ... no
+[?25h
+⚠️  failed to check fix missing-babelrc
+
+Error: The given node must be a string literal or an object expression with a "name" property that is a string literal.
+    at ConfigFile._getPresetValue (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\csf-tools\dist\index.js:74:7388)
+    at ConfigFile.getNameFromPath (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\csf-tools\dist\index.js:74:6824)
+    at Object.check (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\cli\dist\generate.js:296:255)
+    at async automigrate (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\cli\dist\generate.js:311:743)
+    at async doInitiate (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\cli\dist\generate.js:372:361)
+    at async withTelemetry (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\core-server\dist\index.js:33:5540)
+    at async initiate (C:\Users\mutu1\AppData\Local\npm-cache\_npx\eebb2d3a7d26a7f1\node_modules\@storybook\cli\dist\generate.js:378:133)
+
+╭ Migration check ran with failures ─────────────────────────────────────╮
+│                                                                        │
+│                                                                        │
+│   Successful migrations:                                               │
+│                                                                        │
+│   eslintPlugin                                                         │
+│                                                                        │
+│   Failed migrations:                                                   │
+│                                                                        │
+│   newFrameworks:                                                       │
+│   The given node must be a string literal or an object expression      │
+│   with a "name" property that is a string literal.                     │
+│                                                                        │
+│   missing-babelrc:                                                     │
+│   The given node must be a string literal or an object expression      │
+│   with a "name" property that is a string literal.                     │
+│                                                                        │
+│                                                                        │
+│   You can find the full logs in                                        │
+│   C:\Users\mutu1\gitspace\hackathon01\client\migration-storybook.log   │
+│                                                                        │
+│   Skipped migrations:                                                  │
+│                                                                        │
+│   mdx1to2                                                              │
+│                                                                        │
+│   ─────────────────────────────────────────────────                    │
+│                                                                        │
+│   If you'd like to run the migrations again, you can do so by          │
+│   running 'npx storybook@next automigrate'                             │
+│                                                                        │
+│   The automigrations try to migrate common patterns in your project,   │
+│   but might not contain everything needed to migrate to the latest     │
+│   version of Storybook.                                                │
+│                                                                        │
+│   Please check the changelog and migration guide for manual            │
+│   migrations and more information:                                     │
+│   https://storybook.js.org/migration-guides/7.0                        │
+│   And reach out on Discord if you need help:                           │
+│   https://discord.gg/storybook                                         │
+│                                                                        │
+╰────────────────────────────────────────────────────────────────────────╯
+
