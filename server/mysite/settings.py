@@ -135,3 +135,5 @@ REST_FRAMEWORK = {
     "PAGE_SIZE": 100,
 }
 CORS_ALLOW_ALL_ORIGINS = True
+
+AUTH_USER_MODEL = "accounts.User"
