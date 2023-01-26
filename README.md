@@ -1,6 +1,6 @@
 ## Figma
 https://www.figma.com/file/cGiOr93VtBYE2rbFhA0pPa/Untitled?node-id=0%3A1&t=Qi2ijAlUf5pkTFgL-0
-</br>大まかな機能やb雰囲気をつかむためのものなので最小限のデザイン。デザイン変更の可能性大。
+</br>大まかな機能や雰囲気をつかむためのものなので最小限のデザイン。デザイン変更の可能性大。
 
 ## Frontend
 Next.jsでUI構築、ページ遷移、API通信。
