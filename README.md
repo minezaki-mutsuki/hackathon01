@@ -6,8 +6,8 @@ https://www.figma.com/file/cGiOr93VtBYE2rbFhA0pPa/Untitled?node-id=0%3A1&t=Qi2ij
 Next.jsでUI構築、ページ遷移、API通信。
 
 ## Backend
-DRFでAPI作成
-データベースの設計
+DRFでAPI作成<br>
+データベースの設計<br>
 https://app.diagrams.net/#G1svpGDBUaetwJS69AAXW-hrPlATQBNj6Y
 
 ## 実装の優先順位(Backendはユーザー機能を最優先で実装)
