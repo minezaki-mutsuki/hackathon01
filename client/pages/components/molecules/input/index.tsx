@@ -10,6 +10,7 @@ type InputProps = {
     formtype?: string;
 }
 
+
 // eslint-disable-next-line react/display-name
 export const Input = forwardRef<HTMLInputElement&HTMLTextAreaElement, InputProps>(
     ({title, isRegister, placeholder, height, isInput, formtype}: InputProps, ref) => {
