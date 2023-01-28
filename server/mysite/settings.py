@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     # "rest_framework.authtoken",
     # "corsheaders",
     # My applications
-    "accounts.apps.AccountsConfig",
+    "models.apps.ModelsConfig",
     "apiv1.apps.Apiv1Config",
 ]
 
