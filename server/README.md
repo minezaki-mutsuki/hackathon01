@@ -1,3 +1,4 @@
+#ビルドのやり方
 ### 1. 仮想マシンの構築
 
 ```powershell
@@ -46,14 +47,16 @@ pip install -r requirements.txt
 python manage.py makemigrations {APP名}
 python manage.py migrate
 ```
-
-### 5. Adminユーザーの追加
+### 5. 大学データの追加
+```powershell
+python manage.py loaddata post_initial.json
+```
+### 6. Adminユーザーの追加
 
 ```powershell
 python manage.py createsuperuser
 ```
-
-### 6. ローカルサーバの起動
+### 7. ローカルサーバの起動
 
 ```powershell
 python manage.py runserver
