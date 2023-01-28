@@ -34,6 +34,7 @@ export const StyledInput = styled.input<{isRegister: boolean}>`
 export const StyledTextarea = styled.textarea<{height: number}>`
     padding: 10px 20px;
     border-radius: 12px;
+    width: 200px;
     height: ${({height}) => height}px;
     resize: none;
     border: none;
