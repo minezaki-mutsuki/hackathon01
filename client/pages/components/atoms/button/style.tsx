@@ -4,8 +4,9 @@ export const Wrapper = styled.button`
     font-size: 18px;
     color: white;
     display: flex;
-    padding: 10px 20px;
+    padding: 15px 25px;
     background-color: #2A325C;
     cursor: pointer;
     border: none;
+    border-radius: 50px;
 `

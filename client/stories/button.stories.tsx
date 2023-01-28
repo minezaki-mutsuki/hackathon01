@@ -5,6 +5,7 @@ import React from "react";
 export default {
     title: "Atoms/Button",
     component: Button,
+    tags: ['autodocs'],
 }
 
 const Template: ComponentStory<typeof Button> = (args) => (
