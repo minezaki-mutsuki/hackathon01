@@ -15,7 +15,7 @@ export const LoginForm = ({register}: LoginFormProps) => {
     return(
         <Wrapper>
             <Input isRegister={true} isInput={true} placeholder={"email"} {...register("email")} />
-            <Input isRegister={true} isInput={true} placeholder={"passward"} {...register("passward")} />
+            <Input isRegister={true} isInput={true} placeholder={"passward"} {...register("passward")} formtype={"password"} />
         </Wrapper>
     )
 }

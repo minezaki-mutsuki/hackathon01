@@ -7,15 +7,16 @@ type InputProps = {
     placeholder?: string;
     height?: number;
     isInput: boolean;
+    formtype?: string;
 }
 
 // eslint-disable-next-line react/display-name
 export const Input = forwardRef<HTMLInputElement&HTMLTextAreaElement, InputProps>(
-    ({title, isRegister, placeholder, height, isInput}: InputProps, ref) => {
+    ({title, isRegister, placeholder, height, isInput, formtype}: InputProps, ref) => {
         return(
         <>
             {title &&  <TitleText isRegister={isRegister}>{title}</TitleText>}
-            {isInput ? (<StyledInput isRegister={isRegister} placeholder={placeholder} ref={ref} />) : (height) ? (<StyledTextarea height={height} ref={ref} />) : ""}
+            {isInput ? (<StyledInput type={formtype} isRegister={isRegister} placeholder={placeholder} ref={ref} />) : (height) ? (<StyledTextarea height={height} ref={ref} />) : ""}
         </>
         )
     }
