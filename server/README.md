@@ -49,7 +49,7 @@ python manage.py migrate
 ```
 ### 5. 大学データの追加
 ```powershell
-python manage.py loaddata post_initial.json
+python manage.py loaddata school.json
 ```
 ### 6. Adminユーザーの追加
 
