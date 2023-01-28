@@ -143,4 +143,4 @@ REST_FRAMEWORK = {
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "rest_framework:login"
 
-AUTH_USER_MODEL = "accounts.User"
+AUTH_USER_MODEL = "models.User"
