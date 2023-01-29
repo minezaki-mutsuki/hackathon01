@@ -1,4 +1,6 @@
+import axios from "axios";
 import Router from "next/router";
+import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { QestionFormValue } from "./components/organisms/qestionForm";
 import { QestionLayout } from "./components/templates/question"
@@ -27,6 +29,15 @@ const Qestion = () => {
         userId: 4,
         onClick: (id:number) => Router.push(`/${id}`),
     },]
+
+    const [post, setPost] = useState([])
+
+    useEffect(() => {
+        fetch('/api/v1/posts/', {method: 'GET'})
+        .then(res => res.json())
+        .then(data => {setPost(data)})
+        console.log(post)
+    }, [])
 
 
   const onSubmit: SubmitHandler<QestionFormValue> = async () => {
