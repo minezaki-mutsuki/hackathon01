@@ -55,7 +55,7 @@ const Qestion = () => {
       };
 
     return(
-        <QestionLayout register={register} items={post} userName={"ユーザーネーム"} point={50} handleSubmit={handleSubmit(onSubmit)} />
+        <QestionLayout register={register} items={post} userName={"ぼっち大学生"} point={50} handleSubmit={handleSubmit(onSubmit)} />
     )
 }
 export default Qestion

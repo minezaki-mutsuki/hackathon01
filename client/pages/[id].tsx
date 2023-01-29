@@ -41,7 +41,7 @@ const Answer = () => {
 },]
 
     return(
-        <AnswerLayout register={register} items={items} userName={"ユーザーネーム"} point={50} handleSubmit={handleSubmit(onSubmit)} onClick={() => onClick()} title={"タイトル"} content={"内容"} />
+        <AnswerLayout register={register} items={items} userName={"ぼっち大学生"} point={50} handleSubmit={handleSubmit(onSubmit)} onClick={() => onClick()} title={"タイトル"} content={"内容"} />
     )
 }
 export default Answer

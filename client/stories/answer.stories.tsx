@@ -15,32 +15,32 @@ export const Basic = () => {
     const onSubmit: SubmitHandler<AnswerFormValue> = (data) => console.log(data);
   
     const items = [{
-        userName: "ユーザー1",
-        answer: "回答1",
+        userName: "つよつよ大学生",
+        answer: "過去問なんか頼るな、自分でやれ",
         userId: 1,
         onClick: (id: number) => console.log(`${id}番のページに遷移`),
         status: false,
     },{
-        userName: "ユーザー2",
-        answer: "回答2",
+        userName: "人脈の多い陽キャ大学生",
+        answer: "過去問もってます！",
         userId: 2,
         onClick: (id: number) => console.log(`${id}番のページに遷移`),
-        status: false,
+        status: true,
     },{
-        userName: "ユーザー3",
-        answer: "回答3",
+        userName: "秀才大学生",
+        answer: "問題全部解けるので後で解説作ります",
         userId: 3,
         onClick: (id: number) => console.log(`${id}番のページに遷移`),
-        status: false,
+        status: true,
     },{
-        userName: "ユーザー4",
-        answer: "回答4",
+        userName: "情弱大学生",
+        answer: "私も欲しいですー",
         userId: 4,
         onClick: (id: number) => console.log(`${id}番のページに遷移`),
         status: false,
     },]
 
     return (
-      <AnswerLayout register={register} items={items} userName={'ユーザーネーム'} point={50} handleSubmit={handleSubmit(onSubmit)} onClick={() => console.log("投稿一覧ページに遷移")} title={'タイトル'} content={'内容'}  />
+      <AnswerLayout register={register} items={items} userName={'ぼっち大学生'} point={50} handleSubmit={handleSubmit(onSubmit)} onClick={() => console.log("投稿一覧ページに遷移")} title={'線形代数の過去問ください！'} content={'できれば回答解説もいただけるとうれしいです'}  />
     );
   };

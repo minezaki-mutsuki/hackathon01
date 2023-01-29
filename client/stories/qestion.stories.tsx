@@ -15,28 +15,28 @@ export const Basic = () => {
     const onSubmit: SubmitHandler<QestionFormValue> = (data) => console.log(data);
   
     const items = [{
-        userName: "ユーザー1",
-        title: "タイトル1",
+        userName: "ぼっち大学生",
+        title: "線形代数の過去問ください！",
         userId: 1,
         onClick: (id:number) => console.log(`${id}番のページに遷移`),
     },{
-        userName: "ユーザー2",
-        title: "タイトル2",
+        userName: "陽キャ大学生",
+        title: "おすすめのテニスサークルてあります？",
         userId: 2,
         onClick: (id: number) => console.log(`${id}番のページに遷移`),
     },{
-        userName: "ユーザー3",
-        title: "タイトル3",
+        userName: "情弱大学生",
+        title: "履修登録はどうやるの？",
         userId: 3,
         onClick: (id: number) => console.log(`${id}番のページに遷移`),
     },{
-        userName: "ユーザー4",
-        title: "タイトル4",
+        userName: "狂った大学生",
+        title: "勉強辛くて退学したいけどどう思いますか",
         userId: 4,
         onClick: (id: number) => console.log(`${id}番のページに遷移`),
     },]
 
     return (
-      <QestionLayout register={register} items={items} userName={'ユーザーネーム'} point={50} handleSubmit={handleSubmit(onSubmit)} />
+      <QestionLayout register={register} items={items} userName={'ぼっち大学生'} point={50} handleSubmit={handleSubmit(onSubmit)} />
     );
   };
