@@ -1,3 +1,6 @@
+## 発表スライド
+https://docs.google.com/presentation/d/1uCMnXkjAe2AEDI_HV2HnsJxbhCMwIoVzy6ZY1FDgqr0/edit#slide=id.g1edda29caa8_5_503
+
 ## Figma
 https://www.figma.com/file/cGiOr93VtBYE2rbFhA0pPa/Untitled?node-id=0%3A1&t=Qi2ijAlUf5pkTFgL-0
 </br>大まかな機能や雰囲気をつかむためのものなので最小限のデザイン。デザイン変更の可能性大。
