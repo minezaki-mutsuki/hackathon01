@@ -9,4 +9,5 @@ export const Wrapper = styled.button`
     cursor: pointer;
     border: none;
     border-radius: 50px;
+    margin: auto;
 `

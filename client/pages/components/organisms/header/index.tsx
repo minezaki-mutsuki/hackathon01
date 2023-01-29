@@ -1,3 +1,4 @@
+import Router from "next/router"
 import { LogoutText, TitleText, Wrapper } from "./style"
 
 type HeaderProps = {
@@ -6,7 +7,7 @@ type HeaderProps = {
 
 export const Header = ({isLogined}: HeaderProps) => {
     const onClickLogout = () => {
-        console.log("ログインページに遷移")
+        Router.push('/')
     }
 
     return(
