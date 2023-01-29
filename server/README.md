@@ -40,15 +40,11 @@ python -m pip install --upgrade pip
 ```
 pip install -r requirements.txt
 ```
-****3.3 その他パッケージをインストール(必要ない可能性あり)****
-```
-pip install django-cors-headers
-```
+
 
 ### 4. データベースの立ち上げ
 
 ```powershell
-python manage.py makemigrations {APP名}
 python manage.py migrate
 ```
 ### 5. 大学データの追加
