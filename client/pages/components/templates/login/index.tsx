@@ -15,7 +15,7 @@ export const LoginLayout = ({register, onClickLogin, onClickRegister}: LoginProp
         <Wrapper>
             <Header isLogined={false} />
             <BodyWrapper>
-            <TitleText>大学情報共有掲示板</TitleText>
+            <TitleText>情弱Helper</TitleText>
             <LoginForm register={register} />
             <ButtonWrapper>
                 <Button text={"ログイン"} onClick={() => onClickLogin()} />

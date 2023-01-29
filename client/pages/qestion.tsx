@@ -33,19 +33,29 @@ const Qestion = () => {
     const [post, setPost] = useState([])
 
     useEffect(() => {
-        fetch('/api/v1/posts/', {method: 'GET'})
+        fetch('http://127.0.0.1:8000/api/v1/posts/', {method: 'GET'})
         .then(res => res.json())
         .then(data => {setPost(data)})
         console.log(post)
     }, [])
 
-
-  const onSubmit: SubmitHandler<QestionFormValue> = async () => {
-    // post処理
-  };
+    const onSubmit: SubmitHandler<QestionFormValue> = async (data) => {
+        try {
+          await axios.post("/api/v1/posts/", {
+            id: data.content,
+            user: data.title,
+            title: data.title,
+            text: data.content,
+          });
+        } catch (e) {
+          if (axios.isAxiosError(e)) {
+            console.log(e);
+          }
+        }
+      };
 
     return(
-        <QestionLayout register={register} items={items} userName={"ユーザーネーム"} point={50} handleSubmit={handleSubmit(onSubmit)} />
+        <QestionLayout register={register} items={post} userName={"ユーザーネーム"} point={50} handleSubmit={handleSubmit(onSubmit)} />
     )
 }
 export default Qestion

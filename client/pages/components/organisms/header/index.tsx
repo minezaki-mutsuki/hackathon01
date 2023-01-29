@@ -12,7 +12,7 @@ export const Header = ({isLogined}: HeaderProps) => {
 
     return(
         <Wrapper>
-            <TitleText>大学情報共有掲示板（仮）</TitleText>
+            <TitleText>情弱Helper</TitleText>
             {isLogined && <LogoutText onClick={() => onClickLogout()}>ログアウト</LogoutText>}
         </Wrapper>
     )
