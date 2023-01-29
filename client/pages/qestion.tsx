@@ -33,27 +33,19 @@ const Qestion = () => {
     const [post, setPost] = useState([])
 
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/v1/posts/', {method: 'GET'})
+        fetch('/api/v1/posts/', {method: 'GET'})
         .then(res => res.json())
         .then(data => {setPost(data)})
+        console.log(post)
     }, [])
 
 
   const onSubmit: SubmitHandler<QestionFormValue> = async () => {
-    const form = new FormData()
-    form.append("id", "sss")
-    form.append("user", "bc3cd64a-4eb1-4017-866f-c34e3052844f")
-    form.append("title", "送信できてる？",)
-    form.append("text", "繋ぎ込み難しい")
-
-    fetch('http://127.0.0.1:8000/api/v1/posts/', {
-        method: 'POST',
-        body: form
-    })
+    // post処理
   };
 
     return(
-        <QestionLayout register={register} items={post} userName={"ユーザーネーム"} point={50} handleSubmit={handleSubmit(onSubmit)} />
+        <QestionLayout register={register} items={items} userName={"ユーザーネーム"} point={50} handleSubmit={handleSubmit(onSubmit)} />
     )
 }
 export default Qestion
