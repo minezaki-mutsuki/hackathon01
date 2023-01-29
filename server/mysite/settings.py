@@ -26,7 +26,9 @@ SECRET_KEY = "django-insecure-ir353-7+-ic$8_&8qrfez%6h=epv4%b7mzv*d=@zg*s_&x-$x*
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+# DEBUG = False
+ 
+# ALLOWED_HOSTS = ['*']
 
 # Application definition
 
