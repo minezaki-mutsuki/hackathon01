@@ -48,7 +48,6 @@ pip install django-cors-headers
 ### 4. データベースの立ち上げ
 
 ```powershell
-python manage.py makemigrations {APP名}
 python manage.py migrate
 ```
 ### 5. 大学データの追加
